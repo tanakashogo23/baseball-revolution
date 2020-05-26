@@ -1,2 +1,32 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+.main
+  .main__container
+    .main__container__header
+      .main__container__header__center
+        %a{href:"#"}　Baseball revolution
+       
+    %li.main__container__box
+      %h2.main__container__box__list
+        %ul
+          %li 
+            %a{href:"#"} 対戦募集掲示板
+          %li 
+            %a{href:"#"} 利用ルール
+          %li 
+            %a{href:"#"} 天気予報
+          %li 
+            %a{href:"#"} login
+    .main__container__post
+      %a{href:"#"} 新規投稿
+
+   
+    .main__container__content
+      -# 投稿していない場合は表示しない
+      -if @posts.present?
+        =@posts.each do |post|
+          .main__container__content__solid
+            = post
+      
+    
+
+    
+        
