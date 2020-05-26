@@ -16,17 +16,4 @@
           %li 
             %a{href:"#"} login
     .main__container__post
-      %a{href:"posts/new"} 新規投稿
-
-   
-    .main__container__content
-      -# 
-      -if @posts.present?
-        =@posts.each do |post|
-          .main__container__content__solid
-            = post
-      
-    
-
-    
-        
+      %a{href:"#"} 新規投稿

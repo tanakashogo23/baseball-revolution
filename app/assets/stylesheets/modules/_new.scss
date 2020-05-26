@@ -1,0 +1,47 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  background-color: #517D99;
+
+  &__container {
+    height: 100vh;
+    width: 1200px;
+    // background-color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+
+    &__header {
+      // background-color: #fff;
+      height: 160px;
+      
+      &__center {
+        height: 100px;
+        width: 470px;
+        // background-color: black;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 160px;
+        font-family: 'HanziPen SC','Brush Script MT',sans-serif;
+        font-weight: bold;
+
+        a {
+          text-decoration: none;
+          color: #FF9800;
+        }
+      }
+      
+    }
+
+    &__title{
+      font-size: 30px;
+      color: black;
+      text-align: center;
+    }
+  }
+}
