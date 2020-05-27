@@ -6,9 +6,10 @@
     .main__container__title
       新規投稿
       = form_with model: @post, local: true do |form| 
-        = form.text_field :content 
-        = form.submit '投稿する' 
-      end
+        = form.text_field :title, {class: "main__container__title__title", placeholder: :タイトルを入力してください }
+        = form.text_area :content, {class: "main__container__title__text", placeholder: :内容 }
+        = form.submit '投稿する' , {class: "main__container__title__submit"}  
+      
     
        
    
