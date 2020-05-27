@@ -85,9 +85,25 @@
       margin-bottom: 70px;
 
       &__solid {
-        height: ４5px;
+        // height: 50px;
         border-bottom: 1px solid black;
+        // line-height: 50px;
+        &__box {
+          height: 100%;
+          width: 100%;
+          // background-color: chartreuse;
+
+          &__title {
+            // height: 60%;
+            width: 100%;
+            // background-color: chocolate;
+            margin-top: 3px;
+            
+          }
+        }
       }
+
+      
     }
   }
   
