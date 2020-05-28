@@ -1,37 +1,34 @@
-.main
-  .main__container
-    .main__container__header
-      .main__container__header__center
-        %a{href:"/"}　Baseball revolution
-       
-    %li.main__container__box
-      %h2.main__container__box__list
-        %ul
-          %li 
-            -# %a{href:"rule_posts"} 利用ルール
-            =link_to rule_posts_path do
-              利用ルール
-          %li 
-            %a{href:"#"} 天気予報
-          %li 
-            %a{href:"#"} login
-          %li 
-            %a{href:"#"} 新規登録
-    .main__container__post
-      %a{href:"posts/new"} 新規投稿
 
-   
-    .main__container__content
-      -if @posts.present?
-        -@posts.each do |post|
-          .main__container__content__solid
-            .main__container__content__solid__box
-              .main__container__content__solid__box__title
-                =post.title
-              .main__container__content__solid__box__boxa
-                .main__container__content__solid__box__boxa__name
-                  -# =post.name
-                .main__container__content__solid__box__boxa__datatime
-                  投稿日時
-                  =post.created_at
-        
+
+%li.main__container__box
+  %h2.main__container__box__list
+    %ul
+      %li 
+        -# %a{href:"rule_posts"} 利用ルール
+        =link_to rule_posts_path do
+          利用ルール
+      %li 
+        %a{href:"#"} 天気予報
+      %li 
+        %a{href:"#"} login
+      %li 
+        %a{href:"#"} 新規登録
+.main__container__post
+  %a{href:"posts/new"} 新規投稿
+
+
+.main__container__content
+  -if @posts.present?
+    -@posts.each do |post|
+      .main__container__content__solid
+        .main__container__content__solid__box
+          .main__container__content__solid__box__title
+            =link_to post do
+              =post.title
+          .main__container__content__solid__box__boxa
+            .main__container__content__solid__box__boxa__name
+              -# =post.name
+            .main__container__content__solid__box__boxa__datatime
+              投稿日時
+              =post.created_at
+    
