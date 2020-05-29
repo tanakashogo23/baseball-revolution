@@ -82,17 +82,18 @@
       width: 100%;
       background-color: #fff;
       overflow: scroll;
-      // margin-top: px;
+
       border: double 5px #4ec4d3;
       margin-bottom: 70px;
+      background: -webkit-repeating-linear-gradient(-45deg, #f5edfd, #f5edfd 5px, #fdfcff 5px, #fdfcff 10px);
+      background: repeating-linear-gradient(-45deg, #f5edfd, #f5edfd 5px, #fdfcff 5px, #fdfcff 10px);
 
       &__solid {
         border-bottom: 3px double #0097A7;
         &__box {
           height: 100%;
           width: 100%;
-          background: -webkit-repeating-linear-gradient(-45deg, #f5edfd, #f5edfd 5px, #fdfcff 5px, #fdfcff 10px);
-          background: repeating-linear-gradient(-45deg, #f5edfd, #f5edfd 5px, #fdfcff 5px, #fdfcff 10px);
+          
           
 
           &__title {
