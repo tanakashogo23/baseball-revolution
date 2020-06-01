@@ -21,55 +21,48 @@
   &__btn {
     display: flex;
     margin-top: 10px;
-    margin-left: 10px;
+    height: 30px;
+    // margin-left: 10px;
     justify-content: center;
+    :hover {
+      background: #668ad8;
+      color: #FFF;
+    }
    
     
     &__edit {
-      // display: block;
-      // border-radius: 5px;
-      // color: #ffffff;
-      // background-color:blue;
-      // padding: 0 10px;
-      // text-decoration: none;
-      // margin-right: 10px;
-      // cursor: pointer;
       display: inline-block;
+      font-weight: bold;
       padding: 0.5em 1em;
       text-decoration: none;
-      background: #668ad8;/*ボタン色*/
-      color: #FFF;
-      border-bottom: solid 4px #627295;
-      border-radius: 3px;
-      margin-right: 10px;
-      cursor: pointer;
+      border-left: solid 4px #668ad8;
+      border-right: solid 4px #668ad8;
+      color: #668ad8;
+      background: #e1f3ff;
+      transition: .4s;
+      margin-right: 20px;
+      line-height: 15px;
 
       a {
         text-decoration: none;
-        color: #fff;
+        color: #668ad8;
       }
     }
     &__delete {
       display: inline-block;
+      font-weight: bold;
       padding: 0.5em 1em;
       text-decoration: none;
-      background: #668ad8;/*ボタン色*/
-      color: #FFF;
-      border-bottom: solid 4px #627295;
-      border-radius: 3px;
-      cursor: pointer;
-
-      :active {
-         /*ボタンを押したとき*/
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);/*下に動く*/
-      border-bottom: none;/*線を消す*/
-     
-      }
+      border-left: solid 4px #668ad8;
+      border-right: solid 4px #668ad8;
+      color: #668ad8;
+      background: #e1f3ff;
+      transition: .4s;
+      line-height: 15px;
        
       a {
         text-decoration: none;
-        color: #fff;
+        color: #668ad8;
       }
     }
     
