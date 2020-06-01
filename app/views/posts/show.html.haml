@@ -1,5 +1,14 @@
 .warpper
   .warpper__title
     =@post.title
+  .warpper__btn
+    .warpper__btn__edit
+      = link_to edit_post_path(@post) do
+        編集
+    .warpper__btn__delete
+      = link_to post_path(@post),method: :delete do
+        削除
   .warpper__content
     =@post.content
+    
+     
