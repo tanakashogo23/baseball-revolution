@@ -10,17 +10,17 @@
         削除
   .warpper__content
     =@post.content
--# .comment
--#   -if current_user 
--#     = form_with(model: [@post, @comment], local: true, id: "new_comment") do |form|  
--#       = form.text_area :content, placeholder: "コメントする" , rows: "2", class: "textbox" 
--#       = form.submit "投稿", class: "form__submit" 
--#   %end
--#     .comment__comments
-      -# if @comments
-      -#    @comments.each do |comment| 
-      -#       <strong><%= comment.user.nickname ：</strong>
-      -#        comment.content 
-  -#       %end
-  -#     %end
-  -# %end
+.comment
+  -if current_user 
+    = form_with(model: [@post, @comment], local: true, id: "new_comment") do |form|  
+      = form.text_area :content, placeholder: "コメントする" , rows: "2", class: "textbox" 
+      = form.submit "投稿", class: "form__submit" 
+  %end
+    .comment__comments
+      if @comments
+         @comments.each do |comment| 
+            <strong><%= comment.user.nickname ：</strong>
+             comment.content 
+        %end
+      %end
+  %end
