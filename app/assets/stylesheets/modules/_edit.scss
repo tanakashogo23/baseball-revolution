@@ -1,0 +1,43 @@
+.content__title {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+.form__title{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+
+  &__title{
+    width: 70%;
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    margin-top: 20px;
+    font-size: 20px;
+
+  }
+
+  &__text {
+    display: block;
+    height: 300px;
+    width: 70%;
+    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #FFF;
+    font-size: 20px;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+  }
+
+  &__submit {
+    margin-top: 30px;
+    height: 100px;
+    height: 25px;
+    width: 150px;
+  }
+  
+}
