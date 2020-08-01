@@ -1,7 +1,15 @@
-.content__title
-  投稿の編集
+-# .content__title
+-#   投稿の編集
 
-= form_with model: @post, class: :form, local: true do |form| 
-  = form.text_field :title, placeholder: :タイトル, class: :form__title 
-  = form.text_area :content, placeholder: :ブログ本文, class: :form__text 
-  = form.submit '投稿する', class: :form__btn 
+-# = form_with model: @post, class: :form, local: true do |form| 
+-#   = form.text_field :title, placeholder: :タイトル, class: :form__title 
+-#   = form.text_area :content, placeholder: :ブログ本文, class: :form__text 
+-#   -# = form.submit '投稿する', class: :form__btn 
+-#   = form.submit '投稿する' , {class: "main__container__title__submit"}
+
+.main__container__title
+  投稿の編集
+  = form_with model: @post, local: true do |form| 
+    = form.text_field :title, {class: "main__container__title__title", placeholder: :タイトルを入力してください }
+    = form.text_area :content, {class: "main__container__title__text", placeholder: :内容 }
+    = form.submit '投稿する' , {class: "main__container__title__submit"}  
