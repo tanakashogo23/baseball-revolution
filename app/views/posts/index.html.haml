@@ -11,6 +11,8 @@
       -if user_signed_in? 
         %li 
           = link_to "新規投稿", new_post_path, class: "header__right--btn"
+        %li
+          = current_user.nickname
         %li 
           = link_to "logout", destroy_user_session_path, method: :delete, class: "header__right--btn" 
       -else
