@@ -5,8 +5,6 @@ Rails.application.routes.draw do
     collection do
       get 'rule'
     end
-    resources :posts do
       resources :comments, only: :create
     end
-  end
 end

@@ -1,26 +1,28 @@
 .warpper
   .warpper__title
     =@post.title
-  .warpper__btn
-    .warpper__btn__edit
-      = link_to edit_post_path(@post) do
-        編集
-    .warpper__btn__delete
-      = link_to post_path(@post),method: :delete do
-        削除
+  -if current_user.id == @post.user.id
+    .warpper__btn
+      .warpper__btn__edit
+        = link_to edit_post_path(@post) do
+          編集
+      .warpper__btn__delete
+        = link_to post_path(@post),method: :delete do
+          削除
   .warpper__content
     =@post.content
-.comment
-  -if current_user 
-    = form_with(model: [@post, @comment], local: true, id: "new_comment") do |form|  
-      = form.text_area :content, placeholder: "コメントする" , rows: "2", class: "textbox" 
-      = form.submit "投稿", class: "form__submit" 
-  %end
-    .comment__comments
-      if @comments
-         @comments.each do |comment| 
-            <strong><%= comment.user.nickname ：</strong>
-             comment.content 
-        %end
-      %end
-  %end
+  .comment
+    -if current_user 
+      = form_with(model: [@post, @comment], local: true, id: "new_comment") do |form|  
+        = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "textbox" 
+        = form.submit "投稿", class: "form__submit" 
+  .comment__comments
+    <返信一覧＞
+    -if @comments
+      -@comments.each do |comment| 
+        %strong
+          %p
+            = comment.user.nickname
+            ：
+            = comment.text 
+          
