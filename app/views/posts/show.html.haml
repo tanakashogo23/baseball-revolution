@@ -1,7 +1,7 @@
 .warpper
   .warpper__title
     =@post.title
-  -if current_user.id == @post.user.id
+  -if user_signed_in? && current_user.id == @post.user.id
     .warpper__btn
       .warpper__btn__edit
         = link_to edit_post_path(@post) do
