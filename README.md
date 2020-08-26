@@ -40,3 +40,15 @@
 ### Association
 * belongs_to :user
 * has_many :comments
+
+### usersテーブル
+
+|Coluumn|Type|Options|
+|-------|----|-------|
+|nickname|string|null: false|
+|email|string|null: false|
+|password|string|null: false, unique:true|
+
+### Association
+* has_many :posts
+* has_many :comments 
