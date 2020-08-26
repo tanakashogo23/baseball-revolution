@@ -25,4 +25,18 @@
 ### GitHub
 
 ## 課題や今後実装したい機能
-### 課題はルール道りに使用して頂けるかどうか。管理人を置くかどうか。今後、実装したい機能に致しましては、APIによる天気予報情報の取得。チームごとに登録をできるようにする機能。気になるボタン機能の追加
+### 課題はルール道りに使用して頂けるかどうか。管理人を置くかどうか。今後、実装したい機能に致しましては、APIを使用しての天気予報情報の取得とグーグルマップの情報を取得し現在地から試合が行われる場所までの推定時間の表示。試合が行われるグランドの画像の投稿機能。非同期通信を使用してのイイねボタンの追加。
+
+## DB設計
+### postsテーブル
+
+|Coluumn|Type|Options|
+|-------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|title|text|null: false|
+|content|text|null: false|
+|image|string|-------|
+
+### Association
+* belongs_to :user
+* has_many :comments
