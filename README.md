@@ -52,3 +52,16 @@
 ### Association
 * has_many :posts
 * has_many :comments 
+
+### commentsテーブル
+
+|Coluumn|Type|Options|
+|-------|----|-------|
+|text|text|null: false|
+|post_id|refernces|null: false, foreign_key: true|
+|user_id|refernces|null: false, foreign_key: true|
+
+### Association
+
+* belongs_to :post 
+* belongs_to :user
