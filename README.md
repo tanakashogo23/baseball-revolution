@@ -7,9 +7,13 @@
 ### このアプリは草野球の練習試合を組む際に誰でも自由に利用できる交流型掲示板です
 
 ## 本番環境
-### デプロイ先 https://baseball-revolution.herokuapp.com/ テストアカウント名 test太郎 パスワード a11111
+### デプロイ先 https://baseball-revolution.herokuapp.com/ 
+### テストアカウント名 test太郎 
+### パスワード a11111
 
 ## DEMO
+### <img width="1437" alt="スクリーンショット 2020-08-30 14 48 53" src="https://user-images.githubusercontent.com/60926382/91652237-1daa0400-ead0-11ea-9dbc-375abc938efd.png">
+
 
 
 ## 制作背景
