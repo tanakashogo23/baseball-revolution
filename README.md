@@ -12,6 +12,7 @@
 ### Email test@com 
 ### パスワード a11111
 
+
 ## DEMO
 ### <img width="1437" alt="スクリーンショット 2020-08-30 14 48 53" src="https://user-images.githubusercontent.com/60926382/91652237-1daa0400-ead0-11ea-9dbc-375abc938efd.png">
 ### まずは掲示板の利用ルールを読んでから新規登録を行い、ログインします。
