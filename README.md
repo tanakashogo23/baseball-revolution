@@ -1,6 +1,5 @@
 # README
 
-
 ## アプリ名 
 ###  baseball revolution
 
